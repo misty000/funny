@@ -6,7 +6,8 @@
                  [compojure "1.1.6"]
                  [http-kit "2.1.14"]
 
-                 [cheshire "5.5.0"]]
+                 [cheshire "5.5.0"]
+                 [javax.servlet/servlet-api "2.5"]]
   :plugins [[lein-ring "0.8.8"]]
   :ring {:handler funny.handler/app}
   :main funny.handler
