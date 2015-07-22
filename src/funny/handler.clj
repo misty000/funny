@@ -12,6 +12,12 @@
       "<p>Hello World</p>"
       "env:<pre>" (json/encode (System/getenv) {:pretty true}) "</pre>"
       "properties<pre>" (json/encode (System/getProperties) {:pretty true}) "</pre>"))
+  (GET "env" []
+    (str
+      "<title>Mayday</title>"
+      "<p>Hello World</p>"
+      "env:<pre>" (json/encode (System/getenv) {:pretty true}) "</pre>"
+      "properties<pre>" (json/encode (System/getProperties) {:pretty true}) "</pre>"))
   (route/resources "/")
   (route/not-found "Not Found"))
 
